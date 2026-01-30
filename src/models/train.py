@@ -23,7 +23,14 @@ DATA_DIR = "../../data"
 
 datagen = ImageDataGenerator(
     rescale = 1.0 / 255, 
-    validation_split = 0.2 # 80% training and rest is for validation
+    validation_split = 0.2, # 80% training and rest is for validation
+
+    # data augmentation -> for model robustness
+    rotation_range=20,
+    zoom_range=0.2,
+    width_shift_range=0.1,
+    height_shift_range=0.1,
+    shear_range=10,
 )
 
 trainGenerator = datagen.flow_from_directory(

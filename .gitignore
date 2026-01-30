@@ -1,0 +1,83 @@
+# ================================
+# Python
+# ================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ================================
+# Virtual Environments
+# ================================
+venv/
+env/
+.venv/
+
+# ================================
+# Jupyter Notebooks
+# ================================
+.ipynb_checkpoints/
+
+# ================================
+# Machine Learning / CV Artifacts
+# ================================
+*.h5
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.joblib
+*.pkl
+
+# Training logs
+logs/
+runs/
+
+# ================================
+# Datasets (DO NOT COMMIT)
+# ================================
+data/
+dataset/
+datasets/
+raw_data/
+processed_data/
+
+# Large media files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wav
+
+# ================================
+# OpenCV / MediaPipe Cache
+# ================================
+*.xml
+
+# ================================
+# OS Files
+# ================================
+.DS_Store
+Thumbs.db
+
+# ================================
+# IDE / Editor
+# ================================
+.vscode/
+.idea/
+
+# ================================
+# Environment Variables
+# ================================
+.env
+
+# ================================
+# Temporary / Output
+# ================================
+outputs/
+results/
+checkpoints/
+temp/
+tmp/
+venv_capture

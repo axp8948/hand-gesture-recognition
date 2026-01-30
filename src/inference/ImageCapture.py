@@ -84,9 +84,9 @@ def captureImage():
             
 
 
-        # Displaying the cropped image
-        cv2.imshow("Cropped Image", imgCrop)
-        cv2.imshow("White Image", imgWhite)
+        # # Displaying the cropped image
+        # cv2.imshow("Cropped Image", imgCrop)
+        # cv2.imshow("White Image", imgWhite)
 
 
     return img, imgWhite

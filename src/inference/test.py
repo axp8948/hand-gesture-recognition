@@ -12,11 +12,11 @@ PRED_INTERVAL = 0.5
 
 
 # Load the trained model
-model = tf.keras.models.load_model("../models/hand_gesture_cnn.h5")
+model = tf.keras.models.load_model("../models/hand_gesture_cnn_old.h5")
 
 
 # Class name adjustment
-classNames = ["Thumb", "Fist", "Palm"]
+classNames = ["Thumb", "Fist", "Palm", "Peace", "Call"]
 
 
 # prediction state -> no frame by frame predictin -> stabilization

@@ -251,7 +251,7 @@ model.add(
 
 model.add(
     layers.Dense(
-        units = 3,
+        units = 5,
         activation = "softmax"
     )
 )

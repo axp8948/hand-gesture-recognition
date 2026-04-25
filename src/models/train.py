@@ -223,6 +223,8 @@ model.add(
 )
 
 
+# model.add(layers.GlobalAveragePooling2D())
+
 # ADD A FULLY CONNECTED DENSE LAYER
 
 # 128 neurons -> design choice
@@ -235,6 +237,14 @@ model.add(
         activation = "relu"
     )
 )
+
+# model.add(
+#     layers.Dense(
+#         units = 68,
+#         activation = "relu"
+#     )
+# )
+
 
 
 # DROPOUT 
@@ -328,5 +338,5 @@ print("Validation Accuracy: ", val_acc)
 
 
 # SAVE THE MODEL
-model.save("hand_gesture_cnn.h5")
+model.save("hand_gesture_cnn_5sign.h5")
 

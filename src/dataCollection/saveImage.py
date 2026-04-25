@@ -3,7 +3,7 @@ import time
 import os
 from dataCollection import captureImage
 
-DIRECTORY = "../../data/4"
+DIRECTORY = "../../data/test/4"
 os.makedirs(DIRECTORY, exist_ok=True)
 
 

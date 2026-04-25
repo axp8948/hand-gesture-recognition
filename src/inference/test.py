@@ -12,7 +12,7 @@ PRED_INTERVAL = 0.5
 
 
 # Load the trained model
-model = tf.keras.models.load_model("../models/hand_gesture_cnn_old.h5")
+model = tf.keras.models.load_model("../models/hand_gesture_cnn_5sign.h5")
 
 
 # Class name adjustment
@@ -34,6 +34,7 @@ while True:
         # Preprocess image to match training input
 
         imgInput = cv2.resize(imgWhite, (IMG_SIZE, IMG_SIZE)) # resize
+        imgInput = cv2.cvtColor(imgInput, cv2.COLOR_BGR2RGB) # convert to RGB -> that's the format images were trained on
         imgInput = imgInput / 255.0 # scale
 
         # THIS LINE IS CRITICAL
@@ -63,7 +64,7 @@ while True:
 
 
         # Build display text
-        if lastClssId is not None and lastConfidence >= 0.6:
+        if lastClssId is not None and lastConfidence >= 0.4:
             text = f"Gesture: {classNames[lastClssId]} ({lastConfidence:.2f})"
         else:
             text = "Gesture: Detecting..."

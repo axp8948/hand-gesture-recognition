@@ -48,6 +48,8 @@ src/
 ├── requirements_train.txt
 └── utils
 
+```text
+
 ## Requirements
 
 Two separate requirement files are used:

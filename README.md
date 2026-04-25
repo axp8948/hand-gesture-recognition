@@ -28,6 +28,7 @@ models/hand_gesture_cnn_5sign.h5
 
 ## Project Structure
 
+```text
 src/
 ├── dataCollection
 │   ├── dataCollection.py

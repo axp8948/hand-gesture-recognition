@@ -29,20 +29,11 @@ models/hand_gesture_cnn_5sign.h5
 ## Project Structure
 
 src/
-.
 ├── dataCollection
-│   ├── __pycache__
-│   │   ├── dataCollection.cpython-310.pyc
-│   │   ├── dataCollection.cpython-311.pyc
-│   │   └── dataCollection.cpython-314.pyc
 │   ├── dataCollection.py
 │   └── saveImage.py
 ├── inference
 │   ├── ImageCapture.py
-│   ├── __pycache__
-│   │   ├── ImageCapture.cpython-310.pyc
-│   │   ├── ImageCapture.cpython-311.pyc
-│   │   └── test.cpython-311.pyc
 │   ├── featureVisualization.ipynb
 │   └── test.py
 ├── models

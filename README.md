@@ -47,8 +47,7 @@ src/
 ├── requirements_capture.txt
 ├── requirements_train.txt
 └── utils
-
-```text
+```
 
 ## Requirements
 
